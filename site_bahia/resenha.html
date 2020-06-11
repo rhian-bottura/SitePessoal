@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+     <link rel="stylesheet" href="css/footter.css">
+    <link rel="stylesheet" href="css/elenco.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/resenha.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resenha</title>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <img src="img/bahia.png" alt="">
+   
+    <div class="nav">
+        <ul>
+            
+            <li><a href="home.html">Home</a></li>
+            <li><a href="resenha.html" class="current">Resenha</a></li>
+            <li><a href="jogo.html">Jogos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <input type="checkbox" id="check">
+   
+    </div>
+    <div class="resenha">
+        <span>#Vem <br>
+             Pra <br>
+              Resenha</span>
+    </div>
+    
+</div>
+</div>
+<div class="bt">
+    <input type="text" placeholder="Nome do Jogador" class="i">
+    <button class="btn"><i class="fa fa-search"></i></button>
+</div>
+<div class="c">
+    <div class="jogador">
+        <div class="foto-jogador">
+            <div class="lado">
+                <span>99</span>
+                <span>ATA</span>
+                <img src="img/bahia.png" class="time">
+                <img src="img/brasil.svg" class="pais">
+
+            </div>
+            <img src="img/rhian.png" alt="">
+        </div>
+        <div class="nome">
+            <h1>Rhian</h1>
+        </div>
+        <div class="habilidade">
+            <div class="numeros">
+                <div class="pass">
+                    <span>99</span>
+                    <span>VEL.</span>
+                </div>
+                <div class="pass">
+                    <span>99</span>
+                    <span>DRI</span>
+                </div>
+            </div>
+            <div class="numeros">
+                <div class="pass">
+                    <span>99</span>
+                    <span>REM.</span>
+                </div>
+                <div class="pass">
+                    <span>99</span>
+                    <span>DEF</span>
+                </div>
+            </div>
+            <div class="numeros">
+                <div class="pass">
+                    <span>99</span>
+                    <span>PAS.</span>
+                </div>
+                <div class="pass">
+                    <span>99</span>
+                    <span>FIS</span>
+                </div>
+            </div>
+            </div>
+            </div>
+        
+        
+<div class="g">
+  <div class="grafico">
+    <canvas id="myChart" ></canvas>
+    </div>
+    <div class="grafico">
+        <canvas id="Chart"></canvas>
+        </div>
+</div>
+
+</div>
+<div class="g">
+<div class="grafico2">
+    <canvas id="Chart2" ></canvas>
+</div>
+</div>
+<div class="tipo">
+    <h1>Atacante Nude Vazado a bola acaba sempre na rede</h1>
+</div>
+<div class="footer">
+    <div class="footter-2">
+        <div class="resenha-f">
+            <span>#Vem <br>
+                 Pra <br>
+                  Resenha</span>
+        </div>
+        <img src="img/bahia.png" alt="">
+   
+        <div class="redes-sociais">
+            <ul>
+                <li><a href="https://www.instagram.com/ecbahiajovem/"><i class="fa fa-instagram fa-10x"></i></a> </li> 
+                    <li><a href="https://www.facebook.com/ECBahiaJovem"><i class="fa fa-facebook fa-10x"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <span> Todos os direitos reservados &copy;2020.Desenvolvido por Rhian Bottura.
+        </span>
+</div>
+<a id="subirTopo">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+
+</body>
+</html>
+<script src="js/subir.js"></script>
+<script>
+   
+   var ctx = document.getElementById('myChart');    
+var myChart = new Chart(ctx, {
+    type: 'radar',
+    data: {
+        labels: ['Chute', 'Passe', 'Velocidade', 'Defesa', 'Físico', 'Drible'],
+        datasets: [{
+            label: 'Habilidade',
+            data: [99, 99, 99, 99, 99, 99],
+           
+        }]
+    },
+    options: {
+        scale: {
+        angleLines: {
+            display: false
+        },
+        width: '200px',
+            height: '200px ',
+        ticks: {
+            suggestedMin: 50,
+            suggestedMax: 99
+        }
+        
+    }
+    }
+});
+
+var ctx2 = document.getElementById('Chart');    
+new Chart(ctx2,{
+    "type":"doughnut",
+    "data":{"labels":["Gols","Jogos"],
+    "datasets":[{"label":"Gols","data":[10,12],
+    "fill":false,
+    "backgroundColor":["green","red"],
+    "borderColor":"black",
+    "borderWidth":1}]},
+    "options":
+    {
+        "cutoutPercentage": 50,
+        }});
+
+        var ctx3 = document.getElementById('Chart2');    
+new Chart(ctx3,{
+    "type":"bar",
+    "data":{"labels":["23/02","01/03","28/03","05/04","23/04","04/05","01/06"],
+    "datasets":[{"label":"Nota Por Jogos","data":[9.3,9,8,7,9,10,9.2],
+    "fill":false,
+    "backgroundColor": "blue",
+    "borderColor":"black",
+    "borderWidth":1}]},
+    "options":
+    {"scales":
+        {"yAxes":
+        [{"ticks":{"beginAtZero":true}}]
+        }
+        }});
+</script>

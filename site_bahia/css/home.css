@@ -1,0 +1,208 @@
+.temp{
+   
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.fundo{
+    background: url(../img/fundo2.jpg);
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: unset;
+    border-top: 3px solid #b62c3f;
+   
+}
+.cont{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.cont2{
+   display: flex;
+  
+   
+}
+ .title-temp{
+    font-size: 30px;
+    border-bottom: 2px solid white;
+    text-align: center;
+    width: 100%;
+    
+    color:white;
+}
+.cont .div_grafico{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 300px;
+    margin-left: 20px;
+    height: 300px;
+    
+
+}
+.cont .div_r{
+    width: 30%;
+    margin-left: 20px;
+    height: 300px;
+  
+
+}
+
+.div_r  span{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.div_r .vit img{
+    width: 80px;
+    height: 80px;
+}
+
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.div_r .div-gols{
+    background-color: transparent;
+    width: 40%;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+.div-gols .gols{
+    width: 100px;
+
+}
+ .feitos{
+    background-color: green;
+    height: 100px;
+    position: relative;
+    bottom: 10px;
+    margin-top: 30px;
+    
+}
+.sofridos{
+    background-color: red;
+    height: 20px;
+    margin-top: 100px;
+
+}
+
+.div_r .f{
+    width: 80%;
+    margin: auto;
+    height: 60px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    
+}
+
+.f img{
+    width: 50px;
+    height: 50px;
+}
+.f span{
+    font-size: 30px;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 1.5;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-top:40px ;
+}
+.slide{
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    margin-top: 120px;
+    margin-bottom:30px ;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #b62c3f;
+    margin-bottom: 20px;
+}
+/* Titulo */
+.titulo-2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #b62c3f;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    color:#b62c3f;
+    font-size: 50px;
+}
+.imagem{
+    height: 80%;
+    display: flex;
+}
+.vertical{
+    width: 2px;
+    height: 200px;
+    background-color: #b62c3f;
+}
+.imagem img{
+    width: 300px;
+}
+.mensagem{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+.mensagem p{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.msg{
+    display: flex;
+}
+.msg1{
+    padding: 10px;
+}
+
+@media(max-width:983px){
+    .cont2{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont .div_grafico{
+        width: 200px;
+        height: 200px;
+    }
+    .titulo-2 img{
+        width: 100px;
+    }
+    .vertical{
+        height: 100px;
+    }
+    .slide{
+        margin-top: 130px;
+        width: 80%;
+    }
+    .fundo{
+        width: 80%;
+    }
+}

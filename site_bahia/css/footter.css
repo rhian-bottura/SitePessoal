@@ -1,0 +1,78 @@
+.footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 30px;
+    border-top: 2px solid #b62c3f;
+}
+.footter-2{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #b62c3f;
+}
+.footter-2 .resenha-f{
+    padding: 10px;
+}
+.footter-2 .resenha-f span{
+    font-size: 30px;
+}
+.footter-2 img{
+    width: 100px;
+    height: 100px;
+}
+.footter-2 ul{
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+.footter-2 ul li{
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.8s linear;
+    
+}
+.footter-2 ul li:hover{
+    background-color: white;
+    color: black;
+    
+}
+.footter-2 ul li:hover a{
+    color: black;
+    
+}
+.redes-sociais{
+    width: 100%;
+    font-size: 60px;
+    padding: 30px;
+}
+.v{
+    margin-left: 50px;
+}
+#subirTopo {
+    text-decoration: none;
+    background: #b62c3f;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    padding: 20px;
+    position: fixed;
+    border: 0;
+    border-radius: 200px;
+    font-size: 35px;
+    opacity: .9;
+    }
+    
+    #subirTopo:hover {
+    opacity:1;
+    background-color: #b62c3f;
+    }
+@media (max-width:800px){
+    .footer{
+        padding: 10px;
+    }
+   
+}

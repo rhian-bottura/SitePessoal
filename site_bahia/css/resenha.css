@@ -1,0 +1,206 @@
+
+.bt{
+    background-color: #232323;
+    width: 50px;
+    border-radius: 40px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    transition: 1s linear;
+}
+.bt input{
+    background-color: transparent;
+    border: none;
+    width: 0px;
+    transition: 1s linear;
+    color: white;
+    height: 50px;
+
+}
+ .bt:hover{
+    width: 180px;
+    
+}
+.bt:hover .btn{
+    background-color: white;
+    color: #b62c3f;    
+}
+.bt:hover .i{
+    width: 120px;
+    margin-right: 5px;
+}
+.bt button{
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #b62c3f;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding: 3px;
+}
+.c{
+  display: flex; 
+    
+
+}
+.grafico{
+    width: 300px;
+    height: 200px;
+   border-radius: 10px;
+   background-color: white;
+   margin-left: 50px;
+   
+}
+.grafico2{
+    width: 600px;
+    height: 480px;
+   border-radius: 10px;
+   background-color: white;
+   margin-left: 20px;
+   
+}
+.g{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jogador{
+    width: 300px;
+    height: 60%;
+    margin-left: 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/fundo-carta.png');
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+.jogador .foto-jogador{
+   width: 250px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.foto-jogador img{
+    width: 50%;
+    height: 100%;
+   margin: 15px;
+
+}
+.lado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    justify-content: center;
+}
+.lado img{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+}
+.lado span{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.lado span:nth-child(1){
+    font-size: 30px;
+   
+}
+.nome{
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 2px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+
+}
+.habilidade{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+   
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.numeros{
+    display: flex;
+    border-bottom:1px solid gainsboro ;
+    margin-top: 10px;
+}
+.numeros .pass{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.pass span:nth-child(2){
+    margin-left: 5px;
+}
+.tipo{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+@media (max-width:1100px){
+    .c{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+    }
+    .g{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .grafico{
+        margin-top: 20px;
+        width: 400px;
+    }
+    .grafico2{
+        width: 400px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .tipo h1{
+       font-size: 16px;
+        
+    }
+    .bt{
+        margin: 100px;
+    }
+   
+}
+@media (max-width:600px){
+    .c{
+        margin-left: 30px;
+    }
+    .bt{
+        margin-top: 130px;
+        margin-bottom: 10px;
+    }
+}

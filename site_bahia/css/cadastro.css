@@ -1,0 +1,90 @@
+body{
+    background-color: gainsboro;
+}
+.tudo{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    transition: 2s all linear;
+   
+}
+.tudo2{
+    position: absolute;
+    display: flex;
+    left: -100%;
+    transition: 2s linear;
+    
+}
+form img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.foto{
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-right: 100px;
+    text-align: center;
+}
+.foto img{
+    width: 300px;
+    height: 350px;
+}
+.foto h1{
+    color: #b62c3f;
+}
+.c{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 450px;
+    background-color: whitesmoke;
+   border-radius: 3px;
+  
+   margin-top: 2%;
+}
+form input{
+    width: 400px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    transition: 1s linear;
+    margin: 10px;
+    padding-left: 10px;
+}
+.login{
+    margin-top: 100px;
+}
+form input:focus{
+    width: 430px;
+    border: 2px solid #b62c3f;
+}
+form button{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #b62c3f;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: white;
+    border: 1px solid #b62c3f;
+    color: #b62c3f;
+}
+form span {
+    color: #b62c3f;
+    cursor: pointer;
+}
+

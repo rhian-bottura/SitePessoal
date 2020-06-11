@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/jogo.css">
+    <link rel="stylesheet" href="css/footter.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
+	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jogos</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="img/bahia.png" alt="">
+       
+        <div class="nav">
+            <ul>
+                
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="resenha.html">Resenha</a></li>
+                <li><a href="jogo.html"  class="current">Jogos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+        <div class="resenha">
+            <span>#Vem <br>
+                 Pra <br>
+                  Resenha</span>
+        </div>
+    </div>
+    </div>
+
+ <div class="jogo">
+     <div class="l">
+    <h3>Data:08/06/2020</h3>
+    <h3>Local:Independente Veneza</h3>
+</div>
+     <div class="jogando">
+        
+        <div class="time1">
+            <h2> Bahia Jovem</h2><img src="img/bahia.png" alt="">
+            <h2>2</h2>
+        </div>
+        
+        <div class="time1">
+            <h2>2</h2><img src="img/brasil.svg" alt=""><h2>Brasil</h2>
+        </div>
+    </div>
+    <button class="btn" onclick="aparecer()" > <i class="icon fas fa-chart-bar"></i>Estatisticas </button>
+<div class="tudo" id="checando" style="display: none;">
+        <div class="gols">
+            <div class="titulo">
+            <h1>GOLS</h1>
+            <div class="linha-hori"></div>
+        </div>
+        <div class="esta time-gols">
+            <div class="gol-time">
+                <span><i class="icon far fa-futbol"></i>  Roberto Carlos '80</span>
+                <span><i class="icon far fa-futbol"></i>  Ze Roberto '82</span>
+            </div>
+            <div class="gol-time">
+                <span><i class="icon far fa-futbol"></i>Roberto Carlos '84</span>
+                <span><i class="icon far fa-futbol"></i>Ze Roberto '92</span>
+            </div>
+        </div>
+        </div>
+        <div class="g">
+            <div class="esta">
+                <div class="grafico">
+                    <canvas id="chart"></canvas>
+                </div>
+                <div class="grafico">
+                    <canvas id="chart2"></canvas>
+                </div>
+            </div>
+            <div class="esta">
+                <div class="grafico">
+                    <canvas id="chart3"></canvas>
+                </div>
+                <div class="grafico">
+                    <canvas id="chart4"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="elenco">
+            <div class="elenco1">
+                <div class="titulo">
+                    <h2>Bahia Jovem</h2>
+                </div>
+                <div class="jogadores">
+                    <span>1 Dida</span>
+                    <span>2 Cafu</span> 	 
+                    <span>3 Lúcio</span>	 
+                    <span>6 Roberto Carlos</span>
+                    <span>14 Luisão</span>
+                    <span>8	 Kaká</span>	
+                    <span>10	 Ronaldinho Gaúcho</span>	
+                    <span>11	 Zé Roberto	 </span>
+                    <span>19	Juninho Pernambucano</span> 	 	
+                    <span>7	 Adriano</span> 	 
+                    <span>9	 Ronaldo</span> 	 
+                        
+        
+                    <span>Dir. Técnico Felipão</span>     
+    
+                    <div class="titulo">
+                    Reservas
+                </div> 
+                
+                <span>10	 Ronaldinho Gaúcho</span>	
+                    <span>11	 Zé Roberto	 </span>
+                    <span>19	Juninho Pernambucano</span> 	 	
+                    <span>7	 Adriano</span> 	 
+                    <span>9	 Ronaldo</span>
+                    
+                </div>
+            </div>
+            <div class="linha">
+            </div>
+            <div class="elenco1">
+                <div class="titulo">
+                    <h2>Brasil</h2>
+                </div>
+                <div class="jogadores">
+                <span>1 Dida</span>
+                <span>2 Cafu</span> 	 
+                <span>3 Lúcio</span>	 
+                <span>6 Roberto Carlos</span>
+                <span>14 Luisão</span>
+                <span>8	 Kaká</span>	
+                <span>10	 Ronaldinho Gaúcho</span>	
+                <span>11	 Zé Roberto	 </span>
+                <span>19	Juninho Pernambucano</span> 	 	
+                <span>7	 Adriano</span> 	 
+                <span>9	 Ronaldo</span> 	 
+                        
+        
+                <span>Dir. Técnico Felipão</span>     
+
+                <div class="titulo">
+                    Reservas
+                </div> 
+
+                <span>10	 Ronaldinho Gaúcho</span>	
+                <span>11	 Zé Roberto	 </span>
+                <span>19	Juninho Pernambucano</span> 	 	
+                <span>7	 Adriano</span> 	 
+                <span>9	 Ronaldo</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="footter-2">
+        <div class="resenha-f">
+            <span>#Vem <br>
+                 Pra <br>
+                  Resenha</span>
+        </div>
+        <img src="img/bahia.png" alt="">
+   
+        <div class="redes-sociais">
+            <ul>
+                <li><a href="https://www.instagram.com/ecbahiajovem/"><i class="fa fa-instagram fa-10x"></i></a> </li> 
+                    <li><a href="https://www.facebook.com/ECBahiaJovem"><i class="fa fa-facebook fa-10x"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <span> Todos os direitos reservados &copy;2020.Desenvolvido por Rhian Bottura.
+        </span>
+</div>
+<a id="subirTopo">
+    <i class="fa fa-arrow-up"></i>
+  </a>
+</body>
+</html>
+<script src="js/subir.js"></script>
+<script>
+    let setado = 0
+    function aparecer(){
+        if(setado == 0){
+        checando.style.display = 'block';
+        setado = 1;
+        }else{
+            checando .style.display = 'none';
+            setado = 0
+        }
+    }
+     var ctx = document.getElementById('chart');    
+new Chart(ctx,{
+    "type":"doughnut",
+    "data":{"labels":["Gols Bahia","Gols Brasil"],
+    "datasets":[{"label":"Gols","data":[2,2],
+    "fill":false,
+    "backgroundColor":["black","green"]}]},
+    "options":
+    {
+        "cutoutPercentage": 50,
+        }});
+        var ctx2 = document.getElementById('chart2');    
+new Chart(ctx2,{
+    "type":"doughnut",
+    "data":{"labels":["Posse Bahia","Posse Brasil"],
+    "datasets":[{"label":"Posse de Bola","data":[40 ,60],
+    "fill":false,
+    "backgroundColor":["black","green"]}]},
+    "options":
+    {
+        "cutoutPercentage": 50,
+        }});
+        var ctx3 = document.getElementById('chart3');    
+new Chart(ctx3,{
+    "type":"doughnut",
+    "data":{"labels":["Passes Bahia","Passes Brasil"],
+    "datasets":[{"label":"Passe Certos","data":[271,456],
+    "fill":false,
+    "backgroundColor":["black","green"]}]},
+    "options":
+    {
+        "cutoutPercentage": 50,
+        }});
+        var ctx4 = document.getElementById('chart4');    
+new Chart(ctx4,{
+    "type":"doughnut",
+    "data":{"labels":["Finalizações Bahia","Finalizações Brasil"],
+    "datasets":[{"label":"Finalizações Certas","data":[20,13],
+    "fill":false,
+    "backgroundColor":["black","green"]
+   }]},
+    "options":
+    {
+        "cutoutPercentage": 50,
+        }});
+</script>

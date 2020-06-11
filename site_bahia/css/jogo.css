@@ -1,0 +1,131 @@
+.jogo{
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 130px;
+    background-color: white;
+    margin-bottom: 100px;
+    
+}
+.l{
+    text-align: center;
+}
+.jogando{
+    display: flex;
+    justify-content: center;
+   
+}
+.jogando .time1{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+   
+}
+.jogando img{
+    width: 80px;
+    height: 80px;
+}
+.jogo h2{
+    margin: 20px;
+    font-size:16px ;
+}
+.jogo h3{
+    color:gray;
+}
+.btn{
+    background-color: white;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.elenco{
+    min-width: 300px;
+    max-width: 600px;
+    height: 400px;
+    margin-bottom:40px ;
+    border-top: 2px solid #b62c3f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    display: flex;
+}
+.elenco .linha{
+    width: 1px;
+    height: 100%;   
+    background-color: #b62c3f; 
+}
+.elenco1{
+    width: 50%;
+}
+ .titulo{
+    text-align: center;
+    color: #b62c3f;
+}
+.elenco1 .jogadores{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.esta{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.esta .g{
+    width: 100px;
+    
+}
+.grafico{
+    width: 300px;
+}
+.linha-hori{
+    width: 90%;
+    height: 1px;
+    margin: auto;
+    background-color: #b62c3f;
+}
+.time-gols{
+    margin:30px;
+    border-bottom: 1px solid #b62c3f;
+}
+.time-gols .gol-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+}
+.gol-time span{
+    margin-bottom: 30px;
+}
+.tudo{
+    position: relative;
+    top:20%;
+    transition: 2s linear;
+}
+.icon{
+    color: gray;
+    margin-right: 10px;
+}
+@media (max-width:700px){
+    .grafico{
+        width: 230px;
+    }
+    .time-gols .gol-time{
+       
+        margin-left: 50px;
+    }
+}

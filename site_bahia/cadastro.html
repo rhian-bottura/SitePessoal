@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js" type="text/javascript"></script> 
+    <script src="jquery.maskedinput.js" type="text/javascript"></script>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+<div class="tudo" id="tudo">
+   
+    <div class="foto">
+        <h1>Seja Torcedor</h1>
+        <img src="img/torcedor.png" alt="">
+        </div>
+    <div class="cadastro">
+        <form action="" class="c" id="form-cadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="ex:Rhian Bottura">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="ex:ronaldo@gmail.com">
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="text" id="nasc" placeholder="ex:23/09/2001">
+            <label for="tel">Telefone(Celular):</label>
+            <input type="number" id="tel" placeholder="(00) 94382-2883">
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" placeholder="senha">
+            <label for="conf_senha">Confirmar Senha:</label>
+            <input type="text" id="conf_senha" placeholder="senha">
+            <button type="submit">Cadastrar</button>
+            <span onclick="logar()"><u>Ja tenha cadastro</u></span>
+            <span onclick="cadastrar()"><u>Não quero me cadastrar</u></span>
+        </form>
+    </div>
+    
+</div>
+<div class="tudo2" id="tudo2">
+   
+    <div class="foto">
+        <h1>Seja Bem Vindo ! Torcedor</h1>
+        <img src="img/torcedor.png" alt="">
+        </div>
+    <div class="cadastro">
+       
+        <form action="" class="c login" id="form-cadastro">
+            <img src="img/login.png" alt="">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="ex:ronaldo@gmail.com">
+            <label for="senha">Senha:</label>
+            <input type="text" id="senha" placeholder="Senha">
+            <button type="submit">Logar</button>
+            <span onclick="cadastrar()"><u>Quero me cadastrar</u></span>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    function cadastrar(){
+        tudo.style.left = '10%'
+        tudo2.style.left = '-100%'
+        tudo2.style.opacity = 0
+        tudo.style.opacity = 1
+        
+    }
+    function logar(){
+        tudo2.style.left = '10%'
+        tudo.style.left = '-100%'
+        tudo.style.opacity = 0
+        tudo2.style.opacity = 1
+
+    }
+  
+</script>

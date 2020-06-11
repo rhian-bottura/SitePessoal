@@ -1,0 +1,151 @@
+
+
+
+
+
+.foto-time{
+    background: url('../img/elenco.jpeg');
+    background-size: cover;
+    width: 90%;
+    margin: auto;
+    margin-top: 120px;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.foto-time h1{
+    position: relative;
+    top: 200px;
+    font-size: 30px;
+    left: 30px;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.historia{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+.historia .title{
+    font-size: 20px;
+    font-weight: 200;
+    border-left: 4px solid #b62c3f;
+
+}
+.historia .texto{
+    padding: 30px;
+    color: gray;
+
+}
+.historia .p{
+    font-size: 16px;
+    
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.valores{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.valores .val{
+    position: relative;
+    flex: 1;
+    margin: 20px;
+    height: 300px;
+    background-color: white;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+}
+.val:hover .icon{
+    transform: scale(0);
+    transition: 1s linear;
+    opacity: 0;
+    
+}
+.val:hover h1{
+    top: 70px;
+    opacity: 1;
+    transition: 0.5s linear 0.3s;
+    
+}
+.val:hover span{
+    bottom: 70px;
+    opacity: 1;
+    transition: 0.5s linear 0.3s;
+    
+}
+.val h1, .val span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.val h1{
+    top: 200px;
+    text-transform: uppercase;
+    color: #b62c3f;
+    transition: 0.4s linear;
+}
+.val span{
+    bottom:30px;
+    color: gray;
+    transition: 0.4s linear;
+}
+.icon{
+    color: #b62c3f;
+}
+.linha-horizontal{
+    background-color: #b62c3f;
+    width: 70%;
+    height: 1px;
+    margin: auto;
+}
+
+@media (max-width:808px){
+    .val:hover h1{
+        top: 60px;
+        opacity: 1;
+        transition: 0.5s linear 0.3s;
+        
+    }
+    .val:hover span{
+        bottom: 60px;
+        opacity: 1;
+        transition: 0.5s linear 0.3s;
+        
+    }
+    .val h1, .val span{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    .val h1{
+        top: 200px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: tomato;
+        transition: 0.4s linear;
+    }
+    .val span{
+        bottom:30px;
+        font-size: 12px;
+        color: gray;
+        transition: 0.4s linear;
+    }
+    .foto-time{
+        margin-top: 140px;
+    }
+}
+
+
